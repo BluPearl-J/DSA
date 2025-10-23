@@ -1,0 +1,42 @@
+package DSA1;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+
+public class testStackExampleOne {
+
+    @Test
+    public void testIsEmpty() {
+        StackExampleOne stackExampleOne = new StackExampleOne();
+        assertTrue(stackExampleOne.isEmpty());
+        stackExampleOne.push(1);
+        assertFalse(stackExampleOne.isEmpty());
+    }
+
+
+    @Test
+    public void testPushAndPop() {
+        StackExampleOne stackExampleOne = new StackExampleOne();
+        stackExampleOne.push(10);
+        stackExampleOne.push(20);
+        assertEquals(20, stackExampleOne .pop());
+        assertEquals(10, stackExampleOne .pop());
+    }
+
+    @Test
+    public void testPeek() {
+        StackExampleOne stackExampleOne = new StackExampleOne();
+        stackExampleOne.push(5);
+        assertEquals(5, stackExampleOne.peek());
+    }
+
+
+    @Test
+    public void testSize() {
+        StackExampleOne stackExampleOne = new StackExampleOne();
+        stackExampleOne.push(1);
+        stackExampleOne.push(2);
+        assertEquals(2, stackExampleOne.size());
+    }
+}
