@@ -1,0 +1,32 @@
+package DSA1;
+import java.util.Stack;
+
+public class StackExampleOne {
+    public static boolean isEmpty() {
+        StackExampleOne<int> stackExampleOne = new StackExampleOne<>();
+        return stackExampleOne.isEmpty();
+    }
+
+    public static void push(int value) {
+        stackExampleOne.push(value);
+    }
+
+    public int pop() {
+        return stackExampleOne.pop();
+    }
+
+    public int peek() {
+        return stackExampleOne.peek();
+    }
+
+
+
+    public int size() {
+        return stackExampleOne.size();
+    }
+}
+
+
+
+
+
